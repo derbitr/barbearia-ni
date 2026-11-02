@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbearia NI | Cortes Masculinos & Barboterapia em Campo Grande - RJ</title>
+  <meta name="description" content="Barbearia nota 5.0 no Google com mais de 225 avaliações em Campo Grande, RJ. Cortes em degradê, barba com toalha quente e atendimento de alto padrão. Agende pelo WhatsApp!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #0A0A0D;
+      --bg-surface: #111116;
+      --bg-card: #16161D;
+      --bg-card-hover: #1F1F2A;
+      --border-subtle: #252533;
+      --border-gold: rgba(212, 175, 55, 0.35);
+      
+      --gold-primary: #D4AF37;
+      --gold-light: #F4E7B5;
+      --gold-dark: #9E7D1E;
+      --gold-glow: rgba(212, 175, 55, 0.22);
+
+      --text-white: #FFFFFF;
+      --text-gray: #A3A3B2;
+      --text-muted: #737385;
+
+      --whatsapp-green: #25D366;
+      --whatsapp-green-hover: #1FB855;
+      --whatsapp-glow: rgba(37, 211, 102, 0.3);
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-pill: 9999px;
+
+      --font-title: 'Cinzel', serif;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Social Proof Bar */
+    .top-announcement {
+      background: linear-gradient(90deg, #9E7D1E 0%, #D4AF37 50%, #9E7D1E 100%);
+      color: #0A0A0D;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 9px 16px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .top-announcement span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Navigation Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(10, 10, 13, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 999;
+      padding: 16px 0;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-white);
+    }
+
+    .logo-monogram {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: linear-gradient(135deg, #F4E7B5, #D4AF37, #806313);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-title);
+      font-weight: 900;
+      font-size: 1.25rem;
+      color: #0A0A0D;
+      box-shadow: 0 0 16px var(--gold-glow);
+    }
+
+    .brand-info h1 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+
+    .brand-info p {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--whatsapp-green);
+      color: #FFFFFF;
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px var(--whatsapp-glow);
+    }
+
+    .header-cta:hover {
+      background-color: var(--whatsapp-green-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 60px 0 70px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hero-badge-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(22, 22, 29, 0.8);
+      border: 1px solid var(--border-gold);
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-badge-rating .stars {
+      color: #F59E0B;
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+    }
+
+    .hero h2 {
+      font-family: var(--font-title);
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h2 span {
+      background: linear-gradient(135deg, #F4E7B5 20%, #D4AF37 70%, #FFFFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p.lead {
+      font-size: 1.1rem;
+      color: var(--text-gray);
+      max-width: 660px;
+      margin: 0 auto 34px;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary-hero {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25D366, #1FA850);
+      color: #FFFFFF;
+      padding: 16px 32px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 25px var(--whatsapp-glow);
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary-hero:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+    }
+
+    .btn-secondary-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      color: var(--text-white);
+      border: 1px solid var(--border-subtle);
+      padding: 16px 26px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-secondary-hero:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--gold-primary);
+    }
+
+    .hero-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 50px;
+    }
+
+    .highlight-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px 18px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .highlight-icon {
+      font-size: 1.5rem;
+      color: var(--gold-primary);
+      background: rgba(212, 175, 55, 0.1);
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .highlight-card h4 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .highlight-card p {
+      font-size: 0.8rem;
+      color: var(--text-gray);
+      line-height: 1.4;
+    }
+
+    /* Section Headers */
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 44px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--gold-primary);
+      margin-bottom: 8px;
+    }
+
+    .section-heading {
+      font-family: var(--font-title);
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .section-sub {
+      color: var(--text-gray);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    /* Services Pricing Section */
+    .services-section {
+      padding: 70px 0;
+      background-color: var(--bg-surface);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .pricing-card:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--gold-primary);
+      background: linear-gradient(180deg, #1A1A24 0%, #16161D 100%);
+      box-shadow: 0 10px 30px var(--gold-glow);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, #9E7D1E, #D4AF37, #9E7D1E);
+      color: #0A0A0D;
+      font-family: var(--font-heading);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 16px;
+      border-radius: var(--radius-pill);
+    }
+
+    .card-top {
+      margin-bottom: 20px;
+    }
+
+    .service-name {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .service-desc {
+      font-size: 0.88rem;
+      color: var(--text-gray);
+      min-height: 42px;
+      line-height: 1.45;
+    }
+
+    .service-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin: 20px 0;
+      padding-top: 16px;
+      border-top: 1px dashed var(--border-subtle);
+    }
+
+    .currency {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold-light);
+    }
+
+    .price-value {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-white);
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .service-features li {
+      font-size: 0.84rem;
+      color: var(--text-gray);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .service-features li span.check {
+      color: var(--gold-primary);
+      font-weight: 800;
+    }
+
+    .btn-card-schedule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-surface);
+      color: var(--text-white);
+      border: 1px solid var(--border-subtle);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .pricing-card.featured .btn-card-schedule {
+      background: var(--whatsapp-green);
+      border-color: var(--whatsapp-green);
+      box-shadow: 0 4px 15px var(--whatsapp-glow);
+    }
+
+    .btn-card-schedule:hover {
+      background: var(--whatsapp-green-hover);
+      border-color: var(--whatsapp-green-hover);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* Social Proof & Reviews */
+    .reviews-section {
+      padding: 70px 0;
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .review-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 24px;
+    }
+
+    .reviewer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .reviewer-meta h5 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .reviewer-meta p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .verified-badge {
+      font-size: 0.75rem;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.12);
+      padding: 3px 8px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+    }
+
+    .review-text {
+      font-size: 0.88rem;
+      color: var(--text-gray);
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    /* Location & Hours */
+    .location-section {
+      padding: 70px 0;
+      background: var(--bg-surface);
+    }
+
+    .location-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      align-items: center;
+    }
+
+    .location-info h3 {
+      font-family: var(--font-title);
+      font-size: 1.7rem;
+      margin-bottom: 12px;
+      color: var(--gold-light);
+    }
+
+    .location-info p {
+      color: var(--text-gray);
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .hours-list {
+      list-style: none;
+      margin-bottom: 26px;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .hours-list li span.day {
+      color: var(--text-gray);
+    }
+
+    .hours-list li span.time {
+      font-weight: 600;
+      color: var(--text-white);
+    }
+
+    .btn-maps {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      color: var(--text-white);
+      border: 1px solid var(--border-subtle);
+      padding: 12px 22px;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-heading);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .btn-maps:hover {
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: linear-gradient(135deg, #25D366, #1FA850);
+      color: #FFFFFF;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      z-index: 1000;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+    }
+
+    .floating-whatsapp svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    .floating-whatsapp::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 14px;
+      height: 14px;
+      background-color: #EF4444;
+      border: 2px solid var(--bg-dark);
+      border-radius: 50%;
+    }
+
+    /* Footer */
+    footer {
+      background: #070709;
+      border-top: 1px solid var(--border-subtle);
+      padding: 34px 0;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--gold-primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero-actions {
+        flex-direction: column;
+      }
+      .btn-primary-hero, .btn-secondary-hero {
+        width: 100%;
+      }
+      .brand-info h1 {
+        font-size: 1rem;
+      }
+      .top-announcement {
+        font-size: 0.72rem;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Social Proof -->
+  <aside class="top-announcement">
+    <span>⭐ NOTA 5.0 NO GOOGLE COM MAIS DE 225 AVALIAÇÕES • CAMPO GRANDE - RJ</span>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo">
+        <div class="logo-monogram">NI</div>
+        <div class="brand-info">
+          <h1>BARBEARIA NI</h1>
+          <p>Cortes & Barboterapia</p>
+        </div>
+      </a>
+      <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Barbearia%20NI%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio." class="header-cta" target="_blank" rel="noopener">
+        <span>Agendar no WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge-rating">
+          <span class="stars">★★★★★</span>
+          <span>5.0 no Google (225 avaliações)</span>
+        </div>
+
+        <h2>O Estilo e a Confiança que Você Merece em <span>Campo Grande</span>.</h2>
+        
+        <p class="lead">
+          Cortes masculinos impecáveis, degradê na régua e toalha quente com produtos de primeira linha. Sem fila fantasma e direto ao ponto.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20hoje%20na%20Barbearia%20NI." class="btn-primary-hero" target="_blank" rel="noopener">
+            <span>📅 AGENDAR MEU HORÁRIO</span>
+          </a>
+          <a href="#servicos" class="btn-secondary-hero">
+            <span>Ver Tabela de Serviços</span>
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">⏱️</div>
+            <div>
+              <h4>Pontualidade Total</h4>
+              <p>Horário marcado com precisão para você não perder o seu dia.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">💈</div>
+            <div>
+              <h4>Especialistas em Fade</h4>
+              <p>Degradê navalhado, social ou corte clássico sob medida.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🔥</div>
+            <div>
+              <h4>Barboterapia Exclusiva</h4>
+              <p>Toalha quente, hidratação profunda e lâmina 100% descartável.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & Pricing -->
+    <section id="servicos" class="services-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Tabela Oficial</span>
+          <h3 class="section-heading">Nossos Serviços & Valores</h3>
+          <p class="section-sub">Escolha o seu atendimento e garanta seu horário no WhatsApp em segundos.</p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Card 1: Corte -->
+          <article class="pricing-card">
+            <div class="card-top">
+              <h4 class="service-name">Corte Masculino Premium</h4>
+              <p class="service-desc">Fade, degradê navalhado, corte clássico ou tesoura com lavagem e finalização.</p>
+              <div class="service-price-wrap">
+                <span class="currency">R$</span>
+                <span class="price-value">35</span>
+              </div>
+              <ul class="service-features">
+                <li><span class="check">✓</span> Análise do formato de rosto</li>
+                <li><span class="check">✓</span> Navalha descartável e higienizada</li>
+                <li><span class="check">✓</span> Finalização com pomada modeladora</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Quero%20agendar%20um%20Corte%20Masculino%20na%20Barbearia%20NI." class="btn-card-schedule" target="_blank" rel="noopener">
+              Agendar Corte
+            </a>
+          </article>
+
+          <!-- Card 2: Combo (Destaque) -->
+          <article class="pricing-card featured">
+            <div class="featured-badge">Mais Pedido</div>
+            <div class="card-top">
+              <h4 class="service-name">Combo Cabelo + Barba</h4>
+              <p class="service-desc">Transformação completa do visual com corte moderno e barboterapia relaxante.</p>
+              <div class="service-price-wrap">
+                <span class="currency">R$</span>
+                <span class="price-value">60</span>
+              </div>
+              <ul class="service-features">
+                <li><span class="check">✓</span> Corte completo (Degradê ou Social)</li>
+                <li><span class="check">✓</span> Barboterapia com toalha quente</li>
+                <li><span class="check">✓</span> Óleos essenciais pós-barba</li>
+                <li><span class="check">✓</span> Acabamento de sobrancelha cortesia</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Quero%20agendar%20o%20Combo%20Cabelo%20e%20Barba%20na%20Barbearia%20NI." class="btn-card-schedule" target="_blank" rel="noopener">
+              Agendar Combo VIP
+            </a>
+          </article>
+
+          <!-- Card 3: Barba -->
+          <article class="pricing-card">
+            <div class="card-top">
+              <h4 class="service-name">Barboterapia Tradicional</h4>
+              <p class="service-desc">Alinhamento perfeito de barba com vapor, toalha aromática e massagem facial.</p>
+              <div class="service-price-wrap">
+                <span class="currency">R$</span>
+                <span class="price-value">30</span>
+              </div>
+              <ul class="service-features">
+                <li><span class="check">✓</span> Abertura de poros com toalha quente</li>
+                <li><span class="check">✓</span> Barbear suave sem irritação</li>
+                <li><span class="check">✓</span> Balm e óleo hidratante perfumado</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Quero%20agendar%20uma%20Barba%20Tradicional%20na%20Barbearia%20NI." class="btn-card-schedule" target="_blank" rel="noopener">
+              Agendar Barba
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Proof Reviews -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Avaliações Reais</span>
+          <h3 class="section-heading">O que dizem os clientes</h3>
+          <p class="section-sub">Mais de 225 pessoas avaliaram a Barbearia NI com nota máxima 5.0 estrelas no Google.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="reviewer-header">
+              <div class="reviewer-meta">
+                <h5>Lucas M.</h5>
+                <p>Cliente frequente</p>
+              </div>
+              <span class="verified-badge">★★★★★</span>
+            </div>
+            <p class="review-text">"Melhor barbearia de Campo Grande! Atendimento de primeira, degradê impecável e nunca fico esperando. Ambiente nota 10."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="reviewer-header">
+              <div class="reviewer-meta">
+                <h5>Rodrigo Alves</h5>
+                <p>Avaliação Google</p>
+              </div>
+              <span class="verified-badge">★★★★★</span>
+            </div>
+            <p class="review-text">"A barboterapia com toalha quente é outro nível de conforto. Saio renovado toda semana. Recomendo demais!"</p>
+          </div>
+
+          <div class="review-card">
+            <div class="reviewer-header">
+              <div class="reviewer-meta">
+                <h5>Felipe Santos</h5>
+                <p>Avaliação Google</p>
+              </div>
+              <span class="verified-badge">★★★★★</span>
+            </div>
+            <p class="review-text">"Corte na régua de verdade. Profissionais atenciosos e ambiente climatizado. Nota 5.0 merecidíssima!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Opening Hours -->
+    <section class="location-section">
+      <div class="container">
+        <div class="location-card">
+          <div class="location-info">
+            <span class="section-tag">Onde Estamos</span>
+            <h3>Venha nos Conhecer</h3>
+            <p>Localização privilegiada e de fácil acesso no coração de Campo Grande, Rio de Janeiro.</p>
+            <a href="https://maps.google.com/?cid=14106488141067800458" class="btn-maps" target="_blank" rel="noopener">
+              <span>📍 Abrir Rota no Google Maps</span>
+            </a>
+          </div>
+
+          <div>
+            <span class="section-tag">Horários de Atendimento</span>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Terça a Sexta-feira</span>
+                <span class="time">09:00 às 20:00</span>
+              </li>
+              <li>
+                <span class="day">Sábado</span>
+                <span class="time">08:30 às 20:00</span>
+              </li>
+              <li>
+                <span class="day">Domingo & Segunda-feira</span>
+                <span class="time">Fechado</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Gostaria%20de%20saber%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20na%20Barbearia%20NI." class="btn-primary-hero" style="width: 100%;" target="_blank" rel="noopener">
+              <span>Confirmar Vaga no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/5521968687443?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20NI." class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Agendar horário no WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.531 1.77.82 2.796.821 3.183 0 5.768-2.587 5.768-5.766.001-3.182-2.585-5.769-5.768-5.769zm10.009 5.768c.002 5.539-4.508 10.049-10.04 10.049-1.758 0-3.41-.459-4.858-1.258l-5.142 1.349 1.373-5.018c-.886-1.503-1.373-3.238-1.373-5.122 0-5.54 4.51-10.05 10.04-10.05 5.542 0 10.04 4.51 10.04 10.05zm-4.664 4.195c-.256-.128-1.516-.748-1.751-.833-.235-.086-.407-.128-.578.128-.171.256-.662.833-.812 1.004-.15.171-.3.192-.556.064-.256-.128-1.082-.399-2.061-1.272-.763-.679-1.278-1.518-1.428-1.774-.15-.256-.016-.395.112-.522.115-.115.256-.299.385-.449.128-.149.171-.256.256-.427.086-.171.043-.32-.021-.449-.064-.128-.577-1.389-.791-1.902-.208-.5-.419-.432-.577-.44l-.492-.008c-.171 0-.449.064-.684.32-.235.256-.897.876-.897 2.137 0 1.261.918 2.478 1.047 2.649.128.171 1.808 2.76 4.38 3.87 2.571 1.11 2.571.74 3.033.697.462-.043 1.516-.62 1.729-1.218.214-.599.214-1.111.15-1.219-.064-.107-.235-.171-.491-.299z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Barbearia NI • Campo Grande, Rio de Janeiro - RJ.</p>
+      <p style="margin-top: 6px; font-size: 0.76rem; color: #52525E;">Demonstração exclusiva desenvolvida por <a href="https://pdi-breno-luiz.pdibreno.workers.dev" target="_blank">Breno Luiz</a> • Vitrines de Alta Performance.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
